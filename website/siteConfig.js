@@ -13,7 +13,7 @@ const users = [];
 
 const siteConfig = {
     title: 'Sandhya Joshi', // Title for your website.
-    tagline: 'Continuously improving, aspiring developer.',
+    tagline: ' Continuously improving, aspiring developer.',
     profilePhoto: 'img/profile.png',
     url: ' https://git-guest1018.github.io/Smjoshi/', // Your website URL
     baseUrl: '/tech-portfolio/', // Base URL for your project */
