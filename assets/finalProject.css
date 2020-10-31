@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif,fantasy;
+    background: #d8bfd8 ;  
+    text-align : center  ;
+}
+
+
+
+h1 {
+     color: red;
+     font : Tahoma;
+     text-align: center;
+   
+}
+h2{  
+    color:red;
+    font : Garamond;
+    font-style: italic;
+    text-align: center
+    
+}
+h3{
+    
+    text-align :center;
+    font: Garamond;
+    font-weight: bold;
+}
+hr{
+    width = "60%";
+}
+
+
+p{
+    font-size: default;
+    font-family : monospace
+    text-align :left;
+    font-weight: bold;
+}
+
+label{
+       font-size: 13px;
+       font-weight: bold; 
+       font-family: monospace;
+        margin-left:auto;
+        margin-right: auto;
+}
+textarea {font-size: default;
+    font-family : monospace;
+    text-align :left;
+   
+    
+}

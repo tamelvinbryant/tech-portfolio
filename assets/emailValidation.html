@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Email Validation</title>
+</head>
+    <body>
+        
+        <!----<script src="ch6_example6.js"></script>----->
+        <form action= "" name ="form1" onSubmit= "return emailValidation()">
+         <p>
+            <label for = "EmailAddress"> Enter Your email address: </label></br>
+            <input type="text" name="emailAddress" size="40" maxlength="100" id="emailAddress" 
+             placeholder="someone@someplace.com"/>
+                       
+        </p> 
+        
+        <script>
+            function emailValidation(){
+            var email = document.forms["form1"]["emailAddress"].value;
+            var emailRegExp = /^(([^<>()\[\]\\.,;:@"\x00-\x20\x7F]|\\.)+|("""([^\x0A\x0D"\\]|\\\\)+"""))@(([a-z]|#\d+?)([a-z0-9-]|#\d+?)*([a-z0-9]|#\d+?)\.)+([a-z]{2,4})$/i;
+              
+            if ( email.match(emailRegExp)){
+            window.alert("correct") ;
+            return true;
+            }
+            else{
+                window.alert("Invalid email address");
+                return false;
+                }
+            
+           
+            }
+            
+            
+           
+        </script>
+    </body>
+</html>
