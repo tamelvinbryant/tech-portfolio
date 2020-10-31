@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Chapter 6, Example 6</title>
+</head>
+    <body>
+        
+        <!----<script src="ch6_example6.js"></script>----->
+        <form action= "" name ="form1" onSubmit= "return phoneValidation()">
+         <p>
+            <label for = "PhoneNumber"> Enter Your Phone Number: </label></br>
+        
+            <input type= "text"  name="phoneNumber" size="40" maxlength="100" id="phoneNumber" placeholder="1-800-000-000"/>
+        </p> 
+        
+        <script>
+            function phoneValidation(){
+            var phone = document.forms["form1"]["phoneNumber"].value;
+            var myRegExp = /\d-\d{3}-\d{3}-\d{4}/
+            if ( phone.match(myRegExp)){
+            window.alert("correct") ;
+            return true;
+            }
+            else{
+                window.alert("Invalid phone number");
+                return false;
+                }
+            
+           
+            }
+            
+            
+           
+        </script>
+    </body>
+</html>

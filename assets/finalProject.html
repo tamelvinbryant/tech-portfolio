@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!---Sandhya Joshi
+lesson3-Assignment
+WEB115-1101
+finalProject.html--->
+<html lang ="en">
+<!--------- Step 1--------->   
+<head>
+    <meta charset="UTF-8">
+    <title>WEB 115 Final Project</title>
+   <!--- <script src="projectJS.js"> </script>   ---->
+    
+    
+    <!----- Step 2-------------
+write your name with the following formatting: H1 header, red, Tahoma font, centered text.
+On a new line your JavaScript must write your course and section number with the following 
+formatting: H2 header, Garamond font, red, italicized, centered text.------------------>
+     <link rel="stylesheet" type="text/css" href="finalProject.css" />
+ 
+</head>
+    
+ <body>
+    <!--------- Step 3--------
+ In your HTML document named finalProject, write the Javascript code (after the opening BODY tag)
+that will link to your external JavaScript document named projectJS.js so that
+course and section number appear in the finalProject.htm web document.-------->
+  
+<script src="projectJS2.js"> </script>
+    
+<!---- Step 4-----------
+
+   Create a horizontal rule that is sixty percent of the width of the viewer's screen in finalProject.html---->
+   <hr width = "60%" >
+<!--- Step 5 Create a centered title that reads Build Your Resume.----->
+   <h3> Build your Resume </h3>
+     <div>
+    <form  id ="form1" action= "" name ="form1" >
+<!----Step6   ----Use break and paragraph tags in order to make all of the following elements easy to read and understand.---->
+        <!----Step7  ----.text area created to ask user to enter their full name.---->
+        <p>
+            <!--<label for = "FullName"> Enter Your full name: </label></br>---->
+            <input type="text" name="fullName" size="99" maxlength="100" id="fullName"  placeholder="Enter Your Full Name" />
+			
+        </p> 
+<!-- step 8 text area created to ask user to enter their full address.---->
+        <p>
+           <!--- <label for = "Address"> Enter Your full Address: </label></br>---->
+         
+            <input type="text" name="address" size="99" maxlength="100" id="address" placeholder=" Enter Your full Address"/>
+        </p> 
+<!-- step 9 text area created to ask user to enter their phone number.---->
+        <p>
+            <!----<label for = "PhoneNumber"> Enter Your Phone Number: </label></br>---->
+        
+            <input type="text" name="phoneNumber" size="99" maxlength="100" id="phoneNumber"  placeholder="Enter Your Phone Number"/>
+        </p> 
+<!-- step 10 text area created to ask user to enter their email address.---->
+        <p>
+           <!--- <label for = "EmailAddress"> Enter Your email address: </label></br>---->
+            <input type="text" name="emailAddress" size="99" maxlength="100" id="emailAddress"  onblur="validateEmail()" placeholder="Enter Your email address" />
+        </p> 
+<!--- step 12.  to enter their personal data--->.
+        <textarea name="myTextArea1"  id ="myTextArea1" = cols="100" rows="7" placeholder="Enter your personal information"></textarea></br>
+<!--- step 13.  enter their carrer objective--->.
+        <textarea name="myTextArea2" id ="myTextArea2"cols="100" rows="7" placeholder= "Enter your carrer objectives"></textarea></br>
+<!--- step 14.  enter their Educational background-->.
+        <textarea name="myTextArea3" id ="myTextArea3"cols="100" rows="7" placeholder="Enter your Educational background"></textarea></br>
+<!--- step 15.  entry and exit dates of most recent employement experience--->.
+      
+        <label for = "EntryAndExitDates">Enter entry and exit dates  employment experience1: </label></br>
+        <label for= "Entry Date">From </label>
+        <input type = "date" id="eDate1" value="Entry Date" name="eDate1"/>
+        <label for="Exit Date"> To </label>
+        <input type = "date" id="exDate1" value="Exit Date" name="exDate1"/></br>
+     
+     
+<!--- step 16.  enter most recent employment employment experience--->.
+        <textarea name="myTextArea4" id ="myTextArea4"cols="100" rows="7" placeholder= "employment experience1"></textarea></br>
+<!--- step 17.  3 more prior employment experience-->.
+      
+        <label for = "EntryAndExitDates">Enter entry and exit dates  employment experience2: </label></br>
+        <label for= "Entry Date">From </label>
+        <input type = "date" id="eDate2" value="Entry Date" name="eDate2"/>
+        <label for="Exit Date"> To </label>
+        <input type = "date" id="exDate2" value="Exit Date" name="exDate2"/></br>
+       
+        <textarea name="myTextArea5" id ="myTextArea5"cols="100" rows="7" placeholder=" employment experience2"></textarea>  
+        </br>
+
+        <label for = "EntryAndExitDates">Enter entry and exit dates employment experience3 : </label></br>
+        <label for= "Entry Date">From </label>
+        <input type = "date" id="eDate3" value="Entry Date" name="eDate3"/>
+        <label for="Exit Date"> To </label>
+        <input type = "date" id="exDate3" value="Exit Date" name="exDate3"/></br>
+     
+        <textarea name="myTextArea6" id ="myTextArea6"cols="100" rows="7" placeholder="employment experience3 "></textarea></br>
+
+
+        <label for = "EntryAndExitDates">Enter entry and exit dates employment experience4 : </label></br>
+        <label for= "Entry Date">From </label>
+        <input type = "date" id="eDate4" value="Entry Date" name="eDate4"/>
+        <label for="Exit Date"> To </label>
+        <input type = "date" id="exDate4" value="Exit Date" name="exDate5"/></br>
+     
+        <textarea name="myTextArea7" id ="myTextArea7"cols="100" rows="7" placeholder="employment experience4 "></textarea></br>
+
+      
+<!--- step 18.  3Enter business references-->
+        <textarea name="myTextArea8"id ="myTextArea8" cols="100" rows="7" placeholder= "Enter business referencess"></textarea></br>
+<!--- step 19  Create a Form -->
+        <input type= "button" id= create value="Create Resume" onclick="createResume()" > 
+        <input type="reset" onClick="myFunction()" value="Reset form">
+
+        </form>
+</div>
+
+
+   
+ 
+    
+    
+</body>
+   
+</html>

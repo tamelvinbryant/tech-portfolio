@@ -1,14 +1,12 @@
 ---
-id: projects
-title: Projects
+id: Software Integration
+title: UI project
 ---
 
 Embed any notable projects in this page.
 
-For example, my favorite project would be linked and I can even embed
-a screenshot or GIF to show it.
+This is one of my individual project done to build a Resume using JavaScript and HTML
 
-You can list [links](https://www.hashicorp.com/resources/test-driven-development-tdd-for-infrastructure)
-or even embed images with the following Markdown:
 
-![Add alternate text for image](./assets/rosemary.png)
+This is my link to the project [file:///C:/ResumeBuilder-WEB115_SandhyaJoshi/finalProject.html]
+This is the screenshot of my resume builder (.assets/resumeBuilder.png)
